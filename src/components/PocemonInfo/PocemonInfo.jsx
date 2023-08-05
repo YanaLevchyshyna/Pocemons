@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { PokemonError } from '../PokemonError/PockemonError';
 import { PokemonData } from '../PokemonData/PokemonData';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class PocemonInfo extends Component {
   state = {

@@ -3,7 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import PocemonForm from './PocemonForm/PocemonForm';
 import PocemonInfo from './PocemonInfo/PocemonInfo';
 
-import Modal from './Modal/Modal';
+// import Modal from './Modal/Modal';
 
 class App extends Component {
   state = {
@@ -28,22 +28,23 @@ class App extends Component {
   };
 
   render() {
-    const { showModal, pokemonName } = this.state;
+    // const { showModal, pokemonName } = this.state;
+    const { pokemonName } = this.state;
 
     return (
       <div>
-        <button type="button" onClick={this.toogleModal}>
+        {/* <button type="button" onClick={this.toogleModal}>
           Open Modal
-        </button>
+        </button> */}
 
-        {showModal && (
+        {/* {showModal && (
           <Modal onClose={this.toogleModal}>
             <h1>Hello</h1>
             <button type="button" onClick={this.toogleModal}>
               Close Modal
             </button>
           </Modal>
-        )}
+        )} */}
         <PocemonForm onSubmit={this.handleSubmit} />
         <PocemonInfo pokemonName={pokemonName} />
         <ToastContainer autoClose={3000} />
