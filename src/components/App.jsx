@@ -7,7 +7,7 @@ import PocemonInfo from './PocemonInfo/PocemonInfo';
 
 class App extends Component {
   state = {
-    showModal: false,
+    // showModal: false,
     pokemonName: '',
   };
 
@@ -17,11 +17,11 @@ class App extends Component {
       .then(pokemon => this.setState({ pokemon }));
   }
 
-  toogleModal = () => {
-    this.setState(({ showModal }) => ({
-      showModal: !showModal,
-    }));
-  };
+  // toogleModal = () => {
+  //   this.setState(({ showModal }) => ({
+  //     showModal: !showModal,
+  //   }));
+  // };
 
   handleSubmit = pokemonName => {
     this.setState({ pokemonName });
